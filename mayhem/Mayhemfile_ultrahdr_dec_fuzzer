@@ -1,0 +1,8 @@
+project: savantenvs/libultrahdr
+target: ultrahdr_dec_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ultrahdr_dec_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/ultrahdr_dec_fuzzer
+    libfuzzer: true
