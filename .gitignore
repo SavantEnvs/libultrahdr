@@ -1,0 +1,5 @@
+# build output directories (mayhem/build.sh)
+build*
+
+# downloaded dependency (libjpeg-turbo ExternalProject clone)
+third_party/turbojpeg

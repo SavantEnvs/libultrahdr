@@ -1,0 +1,9 @@
+project: savantenvs/libultrahdr
+# seed-from: https://app.mayhem.security/savantenvs/libultrahdr/ultrahdr-legacy-fuzzer
+target: ultrahdr_legacy_fuzzer-mined-f6c9918
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ultrahdr_legacy_fuzzer-mined-f6c9918/testsuite
+cmds:
+  - cmd: /mayhem/ultrahdr_legacy_fuzzer
+    libfuzzer: true
